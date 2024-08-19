@@ -1,0 +1,60 @@
+.card-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.card-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #fdda0d;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(22, 13, 38, 0.3); /* Opaque background color */
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  flex: 1 1 300px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: auto; /* Ensure height adjusts based on content */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card p,
+.card ul {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.text-yellow {
+  color: #fdda0d;
+}

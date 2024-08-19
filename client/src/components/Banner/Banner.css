@@ -1,0 +1,99 @@
+.banner-wrapper {
+  height: calc(100vh - 80px);
+  position: relative;
+}
+
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.banner-left h2 {
+  font-size: 90px;
+  font-weight: 700;
+  /* background-image: linear-gradient(90deg, #ad1aaf, #ffffff, #5652ff); */
+  background-image: linear-gradient(90deg, #fdda0d, #821398);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* .banner-left h2 span {
+  color: #fdda0d;
+} */
+
+.banner-left p {
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.banner-left .achievements {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-left .achievements h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-right .banner-card {
+  /* width: 400px; */
+  width: 100%;
+  height: 500px;
+  background-color: #ad1aaf;
+  border-radius: 20px;
+  display: none;
+}
+
+.banner-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #ad1aaf; */
+  /* background-color: #fdda0d; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}
+
+.banner-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #5652ff; */
+  /* background-color: #821398; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}

@@ -1,0 +1,207 @@
+.categories-wrapper {
+  position: relative;
+}
+
+.categories-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header h2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+.section-header h2 span {
+  color: #fdda0d !important;
+}
+
+.section-header p {
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+.categories-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.categories-card {
+  max-width: 100%;
+  height: 280px;
+  background: #160d26;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 0;
+  border-bottom: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: space-between;
+  backdrop-filter: blur(100px);
+  cursor: pointer;
+}
+
+.categories-card:last-child .icon-container {
+  display: none;
+}
+
+.categories-card-top {
+  min-height: 80%;
+  border-radius: 20px;
+  background: url("../../assets/category-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.categories-card-top.categories-card-top-2 {
+  background: url("../../assets/game-banner-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories-card-top.categories-card-top-3 {
+  background: url("../../assets/fashion-banner-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories-card-top.categories-card-top-4 {
+  background: url("../../assets/coin-banner-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories-card-top.categories-card-top-5 {
+  background: url("../../assets/character-banner-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories-card-top.categories-card-top-6 {
+  background: url("../../assets/category-6.png");
+}
+
+.categories-card-top.categories-card-top-7 {
+  background: url("../../assets/category-7.png");
+}
+
+.categories-card-top.categories-card-top-8 {
+  background: url("../../assets/category-8.png");
+}
+
+.categories-card-top .icon-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(4px);
+}
+
+.categories-card-top .icon-container h3 {
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fdda0d;
+}
+
+.categories-card:hover .icon-container {
+  top: 0;
+}
+
+.categories-card-bottom h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.categories-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #5652ff; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}
+
+.categories-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #ad1aaf; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+@media screen and (max-width: 767px) {
+  .categories-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 45px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .section-header p {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .categories-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .categories-card {
+    height: 180px;
+  }
+
+  .categories-card-bottom h3 {
+    font-size: 17px;
+  }
+
+  .categories-card-top .icon-container h3 {
+    text-align: center;
+  }
+}

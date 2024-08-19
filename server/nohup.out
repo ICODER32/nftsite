@@ -1,0 +1,43 @@
+{
+  type: 'service_account',
+  project_id: 'tyccon-426520',
+  private_key_id: '7c1342fd9ce9eee44796e6f29c9230d84e96a042',
+  private_key: '-----BEGIN PRIVATE KEY-----\n' +
+    'MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFz141Dm0fXDV1\n' +
+    'CPZqM4A5j7QTuGMdOblRiiJWpbVoTMNpVAr3mcnLfTYuEwZKuoYE2JchliwNxHw8\n' +
+    '+Q/IUkJLTEcl7MLMQWL2l2bDacbEwuL0197eGFTK8XMbSBcqdrtDozqGzMLKDO1B\n' +
+    'ymHex5eQvT79irz7psmuLvXLBPHcE9AgUja9PylPu4bExi6gO9jBX24EVO54cY4e\n' +
+    'VjGfHCeEURBPQvKKO+kZ+wpGCiwS+g0pioYZ0Z30xSwrP7FSJNahoTY+k493APSM\n' +
+    '8b87waOR8pUhJzuiJrlfb+iBNLc6fHNDKt0iZsxUbPPcfpnXpxMkMCfMWXrgtdrz\n' +
+    '5WdjuUOjAgMBAAECggEAWCb/nrldG/qlwBBMcCufWweVgqxLTzzoP1RF1UNnwqFi\n' +
+    '/E99y7X3Xf3g5UuJJEhXbVVwlIEuBLypeSqtQ+KUtKW7l0UZ0pjZF3eFTlSXRhxr\n' +
+    'tB13rpY9Q2uyllfcKwpajdvyOxyJOi3klcsxLmzYOKJ9rdPkQGmlu0AmPWFov2Az\n' +
+    '7qvWvP7CwjAVmDiYm+cDUoQtIUAcpgfGt/EUGzg/Huum4817haEm7JPTolaSBoWx\n' +
+    '2YbXTlNHX+Be5COvIeN9vQlL5cEavlJOFtgSS7zj6IA9+gPs8gSuDAk7pgKYVy9e\n' +
+    '7E4V1lQh28Y+H3jRWynOfHLY1vvGwE2Fi0erQSNH0QKBgQDxlqaf0YZSl2OLZ/0E\n' +
+    'ntKl6mJtAIQ3wGRPxY1fwGGjVd/OIfgJ4LPF1jVHqxlIK7X9vBmF5Xxg+VN+xjzn\n' +
+    'nJaJVkhNvvsyN8OJb3FjIRgSCLX+LY+mPcq3/m0+82Jt8f/JXNmSpLLpN9LA3+P+\n' +
+    '/cpta1TLqbFioqu+unAqhhqE1wKBgQDRnCrHj57TT5K6nn0t0qR5+7gqCqistSxI\n' +
+    'o8hGo5g5MU+H/R15rvpYVRYQ8sAL84ot+QOsIn/Jp869pBlARc9hAv0/8xiGw76v\n' +
+    'j/UjkcpNIwgdworQFcpTPaPOiGKB/yin525AF3tU52nZvaAno8mGRRcgy66DY5H5\n' +
+    'XdLLS4zSFQKBgAz0IPcMywD+sQ22g7CNu4m96Y0iq/Q5UqecVho+PH3/isKIu737\n' +
+    '2GfRNoYjPHXMMjPqtAuj5GlmtP1lL7rTgJbYk4Pnq5xjtQ5XdWL1UU8WPHvmgX9O\n' +
+    'bOI0uDLZ5fszMJ3hZqEgR5+NqLVCy/zOKt53FNLexG4ffsn5QS5mhmF9AoGAX8Vy\n' +
+    '5muArhwVdp8jouQzsmiI5Oyp1P+SlD4BLAVjb/5P0FqeNRL135ZA1s2TYeKMqCS2\n' +
+    'wNeie4jotU1dHDjJYBH1lFqGQkz9u0mTQAVE4am386EHu7u5Df+D8MHwAGWNNepQ\n' +
+    'PYh9GXYCrzItEu+LDIZU4u8tdWrxL3bm8Ww7k2ECgYEAtYPCFe38yZdATaXBz4Gs\n' +
+    'CItgjMNZi1MEcAVgyNA+2eHoAbo/E9v389CEpQUEjqzK+Hz8/e5Y9UaekNIQmvnf\n' +
+    'Ex8qmzY0TC1XT1Cuc5Nize0xCc7OWdAEBIFkcyMp64VgQQCkzu9+LXSnC99lLt0U\n' +
+    'aKjCUnHFLraB4pJSYMIKos0=\n' +
+    '-----END PRIVATE KEY-----\n',
+  client_email: 'tyccon-territory@tyccon-426520.iam.gserviceaccount.com',
+  client_id: '115887121886577266548',
+  auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+  token_uri: 'https://oauth2.googleapis.com/token',
+  auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+  client_x509_cert_url: 'https://www.googleapis.com/robot/v1/metadata/x509/tyccon-territory%40tyccon-426520.iam.gserviceaccount.com',
+  universe_domain: 'googleapis.com'
+}
+(node:2332516) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server is running on port 3001

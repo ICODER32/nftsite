@@ -1,0 +1,109 @@
+.newsletter-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.newsletter-container {
+  /* height: 443px; */
+  background: #354f52;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 0;
+  border-bottom: 0;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: 40% 60%;
+  backdrop-filter: blur(100px);
+  padding: 50px;
+  /* overflow: hidden; */
+}
+
+.newsletter-left {
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-right h2 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.newsletter-right h2 span {
+  color: #fdda0d;
+}
+
+.newsletter-right p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.newsletter-right .input-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  max-width: 72%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.newsletter-right .input-box input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  padding: 0 30px;
+}
+
+.newsletter-right .input-box button {
+  /* background: linear-gradient(90deg, #ad1aaf 0%, #5652ff 100%); */
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  height: 100%;
+  width: 200px;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px 10px;
+}
+
+.newsletter-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #5652ff; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}
+
+.newsletter-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  /* background-color: #ad1aaf; */
+
+  background: linear-gradient(90deg, #fdda0d, #821398);
+  filter: blur(100px);
+}

@@ -1,0 +1,263 @@
+.carousel {
+  height:   calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background: #611967;
+}
+
+.carousel .list .item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
+  width: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+}
+
+.carousel .list .item .img-box {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.carousel .list .item .fade-name {
+  font-size: 20vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  opacity: 0.1;
+  pointer-events: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: transparent;
+  -webkit-text-stroke: 4px white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel .list .item .fade-name.large-fade-name {
+  font-size: 18vw;
+}
+
+.carousel .list .item .title {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  left: 5%;
+  bottom: 3.5%;
+  color: white;
+
+  /* line-height: 1.3em; */
+}
+
+.carousel .list .item .title-2 {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  color: white;
+}
+
+.carousel .list .item .overlay-title {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  left: 4%;
+  bottom: 8%;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  opacity: 0.3;
+}
+
+.carousel .list .item .overlay-2-title {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  right: 4%;
+  top: 8%;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  opacity: 0.3;
+}
+
+.carousel .list .item .overlay-title-2 {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  left: 6%;
+  bottom: -2%;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  opacity: 0.3;
+}
+
+.carousel .list .item .overlay-2-title-2 {
+  font-size: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: absolute;
+  right: 6%;
+  top: -2%;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  opacity: 0.3;
+}
+
+/* arrows */
+.arrows {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrows button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eee4;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.arrows button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.bg-box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+@media screen and (max-width: 767px) {
+  .carousel .list .item img {
+    width: 100%;
+  }
+
+  .carousel .list .item .img-box {
+    width: 70%;
+    height: 80%;
+  }
+
+  .carousel .list .item .fade-name {
+    font-size: 20vw;
+    -webkit-text-stroke: 2px white;
+  }
+
+  .carousel .list .item .title {
+    font-size: 15vw;
+    bottom: 3.5%;
+  }
+
+  .carousel .list .item .overlay-title {
+    font-size: 15vw;
+    left: 3%;
+    bottom: 6%;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .carousel .list .item .overlay-title-2 {
+    font-size: 15vw;
+    left: 6%;
+    bottom: 1%;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .carousel .list .item .title-2 {
+    font-size: 15vw;
+    right: 5%;
+    top: 3%;
+  }
+
+  .carousel .list .item .overlay-2-title {
+    font-size: 15vw;
+    right: 4%;
+    top: 5.7%;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .carousel .list .item .overlay-2-title-2 {
+    font-size: 15vw;
+    right: 7%;
+    top: 0%;
+    -webkit-text-stroke: 1px white;
+  }
+
+  /* arrows */
+  .arrows {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .arrows button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .carousel .list .item img {
+    width: 80%;
+  }
+
+  .carousel .list .item .img-box {
+    width: 70%;
+    height: 80%;
+  }
+}

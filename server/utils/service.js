@@ -1,0 +1,16 @@
+const dotenv = require("dotenv");
+dotenv.config();
+module.exports = credentials = {
+  type: process.env.ACCOUNT_TYPE,
+  project_id: process.env.PROJECT_ID,
+  private_key_id: process.env.PRIVATE_KEY_ID,
+  private_key:
+    "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFz141Dm0fXDV1\nCPZqM4A5j7QTuGMdOblRiiJWpbVoTMNpVAr3mcnLfTYuEwZKuoYE2JchliwNxHw8\n+Q/IUkJLTEcl7MLMQWL2l2bDacbEwuL0197eGFTK8XMbSBcqdrtDozqGzMLKDO1B\nymHex5eQvT79irz7psmuLvXLBPHcE9AgUja9PylPu4bExi6gO9jBX24EVO54cY4e\nVjGfHCeEURBPQvKKO+kZ+wpGCiwS+g0pioYZ0Z30xSwrP7FSJNahoTY+k493APSM\n8b87waOR8pUhJzuiJrlfb+iBNLc6fHNDKt0iZsxUbPPcfpnXpxMkMCfMWXrgtdrz\n5WdjuUOjAgMBAAECggEAWCb/nrldG/qlwBBMcCufWweVgqxLTzzoP1RF1UNnwqFi\n/E99y7X3Xf3g5UuJJEhXbVVwlIEuBLypeSqtQ+KUtKW7l0UZ0pjZF3eFTlSXRhxr\ntB13rpY9Q2uyllfcKwpajdvyOxyJOi3klcsxLmzYOKJ9rdPkQGmlu0AmPWFov2Az\n7qvWvP7CwjAVmDiYm+cDUoQtIUAcpgfGt/EUGzg/Huum4817haEm7JPTolaSBoWx\n2YbXTlNHX+Be5COvIeN9vQlL5cEavlJOFtgSS7zj6IA9+gPs8gSuDAk7pgKYVy9e\n7E4V1lQh28Y+H3jRWynOfHLY1vvGwE2Fi0erQSNH0QKBgQDxlqaf0YZSl2OLZ/0E\nntKl6mJtAIQ3wGRPxY1fwGGjVd/OIfgJ4LPF1jVHqxlIK7X9vBmF5Xxg+VN+xjzn\nnJaJVkhNvvsyN8OJb3FjIRgSCLX+LY+mPcq3/m0+82Jt8f/JXNmSpLLpN9LA3+P+\n/cpta1TLqbFioqu+unAqhhqE1wKBgQDRnCrHj57TT5K6nn0t0qR5+7gqCqistSxI\no8hGo5g5MU+H/R15rvpYVRYQ8sAL84ot+QOsIn/Jp869pBlARc9hAv0/8xiGw76v\nj/UjkcpNIwgdworQFcpTPaPOiGKB/yin525AF3tU52nZvaAno8mGRRcgy66DY5H5\nXdLLS4zSFQKBgAz0IPcMywD+sQ22g7CNu4m96Y0iq/Q5UqecVho+PH3/isKIu737\n2GfRNoYjPHXMMjPqtAuj5GlmtP1lL7rTgJbYk4Pnq5xjtQ5XdWL1UU8WPHvmgX9O\nbOI0uDLZ5fszMJ3hZqEgR5+NqLVCy/zOKt53FNLexG4ffsn5QS5mhmF9AoGAX8Vy\n5muArhwVdp8jouQzsmiI5Oyp1P+SlD4BLAVjb/5P0FqeNRL135ZA1s2TYeKMqCS2\nwNeie4jotU1dHDjJYBH1lFqGQkz9u0mTQAVE4am386EHu7u5Df+D8MHwAGWNNepQ\nPYh9GXYCrzItEu+LDIZU4u8tdWrxL3bm8Ww7k2ECgYEAtYPCFe38yZdATaXBz4Gs\nCItgjMNZi1MEcAVgyNA+2eHoAbo/E9v389CEpQUEjqzK+Hz8/e5Y9UaekNIQmvnf\nEx8qmzY0TC1XT1Cuc5Nize0xCc7OWdAEBIFkcyMp64VgQQCkzu9+LXSnC99lLt0U\naKjCUnHFLraB4pJSYMIKos0=\n-----END PRIVATE KEY-----\n",
+  client_email: process.env.CLIENT_EMAIL,
+  client_id: process.env.CLIENT_ID,
+  auth_uri: process.env.AUTH_URI,
+  token_uri: process.env.TOKEN_URI,
+  auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
+  client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
+  universe_domain: process.env.UNIVERSE_DOMAIN,
+};

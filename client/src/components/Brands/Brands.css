@@ -1,0 +1,7 @@
+.brands-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 60px 0;
+}
